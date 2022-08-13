@@ -25,8 +25,8 @@
     <![endif]-->
 
 </head>
-
-<body>
+<!-- dark or light or nothing -->
+<body id="bodyForScript" class="light">
 
 <!-- Preloader -->
 <div id="preloader">
@@ -140,6 +140,7 @@
 				<!-- buttons -->
 				<div class="mt-4">
 					<a href="#contact" class="btn btn-default">Hire me</a>
+					<a id="demo" class="btn btn-default">Hire me</a>
 				</div>
 			</div>
 			
@@ -975,6 +976,19 @@
 <script src="js/parallax.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/custom.js"></script>
+<script>
+    document.getElementById("demo").onclick = function() {myFunction()};
 
+function myFunction() {
+	if(document.getElementById("bodyForScript").classList.contains("light")){
+    document.getElementById("bodyForScript").classList.remove('light');
+          document.getElementById("bodyForScript").classList.add('dark');
+    }
+    else{
+    document.getElementById("bodyForScript").classList.remove('dark');
+    document.getElementById("bodyForScript").classList.add('light');
+    }
+}
+</script>
 </body>
 </html>
