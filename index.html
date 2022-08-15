@@ -616,14 +616,17 @@
 			</div>
 			
 			<!-- more button -->
-			<!-- <div class="load-more text-center mt-4">
+			<div class="load-more text-center mt-4">
 				<a href="javascript:" class="btn btn-default"><i class="fas fa-spinner"></i> Load more</a>
-				numbered pagination (hidden for infinite scroll)
+				<br>
+				<br>
+				<br>
+				<!-- numbered pagination (hidden for infinite scroll) -->
 				<ul class="portfolio-pagination list-inline d-none">
 					<li class="list-inline-item">1</li>
 					<li class="list-inline-item"><a href="works-2.html">2</a></li>
 				</ul>
-			</div> -->
+			</div>
 
 		</div>
 
@@ -728,7 +731,8 @@
 					<!-- client item -->
 					<div class="client-item">
 						<div class="inner">
-							<img src="images/client-1.svg" alt="client-name" />
+							<img id="client1dot1" src="images/client-1.svg" alt="client-name" />
+							<img id="client1dot2" style="display: none;" src="images/client-1-light.svg" alt="client-name" />
 						</div>
 					</div>
 				</div>
@@ -736,7 +740,8 @@
 					<!-- client item -->
 					<div class="client-item">
 						<div class="inner">
-							<img src="images/client-2.svg" alt="client-name" />
+							<img id="client2dot1" src="images/client-2.svg" alt="client-name" />
+							<img id="client2dot2" style="display: none;" src="images/client-2-light.svg" alt="client-name" />
 						</div>
 					</div>
 				</div>
@@ -744,7 +749,8 @@
 					<!-- client item -->
 					<div class="client-item">
 						<div class="inner">
-							<img src="images/client-3.svg" alt="client-name" />
+							<img id="client3dot1" src="images/client-3.svg" alt="client-name" />
+							<img id="client3dot2" style="display: none;" src="images/client-3-light.svg" alt="client-name" />
 						</div>
 					</div>
 				</div>
@@ -752,7 +758,8 @@
 					<!-- client item -->
 					<div class="client-item">
 						<div class="inner">
-							<img src="images/client-4.svg" alt="client-name" />
+							<img id="client4dot1" src="images/client-4.svg" alt="client-name" />
+							<img id="client4dot2" style="display: none;" src="images/client-4-light.svg" alt="client-name" />
 						</div>
 					</div>
 				</div>
@@ -760,7 +767,8 @@
 					<!-- client item -->
 					<div class="client-item">
 						<div class="inner">
-							<img src="images/client-5.svg" alt="client-name" />
+							<img id="client5dot1" src="images/client-5.svg" alt="client-name" />
+							<img id="client5dot2" style="display: none;" src="images/client-5-light.svg" alt="client-name" />
 						</div>
 					</div>
 				</div>
@@ -768,7 +776,8 @@
 					<!-- client item -->
 					<div class="client-item">
 						<div class="inner">
-							<img src="images/client-6.svg" alt="client-name" />
+							<img id="client6dot1" src="images/client-6.svg" alt="client-name" />
+							<img id="client6dot2" style="display: none;" src="images/client-6-light.svg" alt="client-name" />
 						</div>
 					</div>
 				</div>
@@ -776,7 +785,8 @@
 					<!-- client item -->
 					<div class="client-item">
 						<div class="inner">
-							<img src="images/client-7.svg" alt="client-name" />
+							<img id="client7dot1" src="images/client-7.svg" alt="client-name" />
+							<img id="client7dot2" style="display: none;" src="images/client-7-light.svg" alt="client-name" />
 						</div>
 					</div>
 				</div>
@@ -784,7 +794,8 @@
 					<!-- client item -->
 					<div class="client-item">
 						<div class="inner">
-							<img src="images/client-8.svg" alt="client-name" />
+							<img id="client8dot1" src="images/client-8.svg" alt="client-name" />
+							<img id="client8dot2" style="display: none;" src="images/client-8-light.svg" alt="client-name" />
 						</div>
 					</div>
 				</div>
@@ -1019,6 +1030,24 @@ function myFunction() {
 		// document.getElementById("sun").style.visibility = "visible";
 		document.getElementById("moon").style.display = "none";
 		document.getElementById("sun").style.display = "initial"; // or unset or initial
+
+		document.getElementById("client1dot1").style.display = "none";
+		document.getElementById("client2dot1").style.display = "none";
+		document.getElementById("client3dot1").style.display = "none";
+		document.getElementById("client4dot1").style.display = "none";
+		document.getElementById("client5dot1").style.display = "none";
+		document.getElementById("client6dot1").style.display = "none";
+		document.getElementById("client7dot1").style.display = "none";
+		document.getElementById("client8dot1").style.display = "none";
+
+		document.getElementById("client1dot2").style.display = "initial";
+		document.getElementById("client2dot2").style.display = "initial";
+		document.getElementById("client3dot2").style.display = "initial";
+		document.getElementById("client4dot2").style.display = "initial";
+		document.getElementById("client5dot2").style.display = "initial";
+		document.getElementById("client6dot2").style.display = "initial";
+		document.getElementById("client7dot2").style.display = "initial";
+		document.getElementById("client8dot2").style.display = "initial";
     }
     else{
 		document.getElementById("bodyForScript").classList.remove('dark');
@@ -1027,6 +1056,24 @@ function myFunction() {
 		// document.getElementById("moon").style.visibility = "visible";
 		document.getElementById("sun").style.display = "none";
 		document.getElementById("moon").style.display = "initial"; // or unset or initial
+
+		document.getElementById("client1dot1").style.display = "initial";
+		document.getElementById("client2dot1").style.display = "initial";
+		document.getElementById("client3dot1").style.display = "initial";
+		document.getElementById("client4dot1").style.display = "initial";
+		document.getElementById("client5dot1").style.display = "initial";
+		document.getElementById("client6dot1").style.display = "initial";
+		document.getElementById("client7dot1").style.display = "initial";
+		document.getElementById("client8dot1").style.display = "initial";
+
+		document.getElementById("client1dot2").style.display = "none";
+		document.getElementById("client2dot2").style.display = "none";
+		document.getElementById("client3dot2").style.display = "none";
+		document.getElementById("client4dot2").style.display = "none";
+		document.getElementById("client5dot2").style.display = "none";
+		document.getElementById("client6dot2").style.display = "none";
+		document.getElementById("client7dot2").style.display = "none";
+		document.getElementById("client8dot2").style.display = "none";
     }
 }
 </script>
