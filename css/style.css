@@ -2216,7 +2216,7 @@ body.dark .blog-page-section .blog-single {
 /* === Go to Top === */
 #return-to-top {
   position: fixed;
-  bottom: 25px;
+  bottom: 105px;
   right: 25px;
   background: rgba(0, 0, 0, 0.2);
   width: 40px;
