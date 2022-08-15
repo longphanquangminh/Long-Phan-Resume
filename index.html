@@ -140,7 +140,6 @@
 				<!-- buttons -->
 				<div class="mt-4">
 					<a href="#contact" class="btn btn-default">Hire me</a>
-					<a id="demo" class="btn btn-default">Hire me</a>
 				</div>
 			</div>
 			
@@ -954,6 +953,8 @@
 
 <!-- Go to top button -->
 <a href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
+<!-- <a id="return-to-top2"><i id="sun" style="visibility: hidden;" class="fas fa-sun"></i></a> -->
+<a id="return-to-top2"><i id="moon" class="fas fa-moon"></i><i style="display: none" id="sun" class="fas fa-sun"></i></a>
 
 <!-- Messenger Plugin chat Code -->
 <div id="fb-root"></div>
@@ -1008,16 +1009,24 @@
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/custom.js"></script>
 <script>
-    document.getElementById("demo").onclick = function() {myFunction()};
+    document.getElementById("return-to-top2").onclick = function() {myFunction()};
 
 function myFunction() {
 	if(document.getElementById("bodyForScript").classList.contains("light")){
-    document.getElementById("bodyForScript").classList.remove('light');
-          document.getElementById("bodyForScript").classList.add('dark');
+		document.getElementById("bodyForScript").classList.remove('light');
+		document.getElementById("bodyForScript").classList.add('dark');
+		// document.getElementById("moon").style.visibility = "hidden";
+		// document.getElementById("sun").style.visibility = "visible";
+		document.getElementById("moon").style.display = "none";
+		document.getElementById("sun").style.display = "initial"; // or unset or initial
     }
     else{
-    document.getElementById("bodyForScript").classList.remove('dark');
-    document.getElementById("bodyForScript").classList.add('light');
+		document.getElementById("bodyForScript").classList.remove('dark');
+		document.getElementById("bodyForScript").classList.add('light');
+		// document.getElementById("sun").style.visibility = "hidden";
+		// document.getElementById("moon").style.visibility = "visible";
+		document.getElementById("sun").style.display = "none";
+		document.getElementById("moon").style.display = "initial"; // or unset or initial
     }
 }
 </script>
