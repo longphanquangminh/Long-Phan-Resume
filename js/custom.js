@@ -95,7 +95,7 @@ $(window).on('load', function() {
             iframe: {
                 markup: '<div class="mfp-iframe-scaler">' +
                     '<div class="mfp-close"></div>' +
-                    '<br><div class="d-flex justify-content-center" style="margin-top: 20px;"><a style="z-index: 99; position: absolute" target="blank" href="https://play.google.com/store/apps/details?id=com.DefaultCompany.MyProjectCameraDemohihi" class="btn btn-default">Download</a></div>' +
+                    '<br><div class="d-flex justify-content-center" style="margin-top: 20px;"><a style="z-index: 99; position: absolute" target="_blank" href="https://play.google.com/store/apps/details?id=com.DefaultCompany.MyProjectCameraDemohihi" class="btn btn-default">Download</a></div>' +
                     '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
                     '</div>',
 
